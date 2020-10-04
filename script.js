@@ -29,7 +29,7 @@ function solveTask2() {
         document.getElementById("task2Answer").innerHTML = `Liczba ${num} należy do przedziału &lt;-35;2)`
     }
     else if (num > 11 && num <= 27) {
-        document.getElementById("task2Answer").innerHTML = `Liczba ${num} należy do przedziału (11;27&gt;)`
+        document.getElementById("task2Answer").innerHTML = `Liczba ${num} należy do przedziału (11;27&gt;`
     } else {
         document.getElementById("task2Answer").innerHTML = `Liczba ${num} nie należy do żadnego z podanych przedziałów.`    
     }
