@@ -36,8 +36,7 @@ function solveTask2() {
 }
 
 function solveTask3() {
-    let num = document.getElementById("task3").value;
-    num = parseInt(num)
+    let num = parseInt(document.getElementById("task3").value);
     switch (num) {
         case 0:
             document.getElementById("task3Answer").innerHTML = "Egzamin do poprawy.";
@@ -51,5 +50,15 @@ function solveTask3() {
         case 3:
             document.getElementById("task3Answer").innerHTML = "Zaliczona tylko praktyka.";
             break;
+        default:
+            document.getElementById("task3Answer").innerHTML = "Wybierz liczbę."; 
     }
 }
+
+document.addEventListener('keypress', function (e) {
+    if (e.key === "Enter") {
+        solveTask1();
+        solveTask2();
+        solveTask3();
+      }
+});

@@ -4,56 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zadania JavaScript - cz. 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div class="container">
 
         <div class="task">
-            <h1>Zadanie 1</h1>
-            <p class="description">
+            <h1 class="header">Zadanie 1</h1>
+            <p class="paragraph paragraph--description">
                 Pobierz liczbę i sprawdź, czy jest ona parzysta.
             </p>
-            <input type="number" id="task1" placeholder="Podaj liczbę" />
-            <p class="answer" id="task1Answer">
-                <!-- Tu będzie odpowiedź na zadanie 1 -->
+            <input class="input" type="number" id="task1" placeholder="Podaj liczbę" />
+            <p class="paragraph paragraph--answer" id="task1Answer">
+                <!-- Task 1 answer will be here -->
             </p>
-            <button class="taskButton" onclick=solveTask1()>Sprawdź</button>
+            <button class="button" onclick=solveTask1()>Sprawdź</button>
         </div>
 
         <div class="task">
-            <h1>Zadanie 2</h1>
-            <p class="description">
+            <h1 class="header">Zadanie 2</h1>
+            <p class="paragraph paragraph--description">
                 Pobierz liczbę i sprawdź, czy mieści się w przedziale &lt;-35;2) lub (11;27&gt;
             </p>
-            <input type="number" id="task2" placeholder="Podaj liczbę" />
-            <p class="answer" id="task2Answer">
-                <!-- Tu będzie odpowiedź na zadanie 2 -->
+            <input class="input" type="number" id="task2" placeholder="Podaj liczbę" />
+            <p class="paragraph paragraph--answer" id="task2Answer">
+                <!-- Task 2 answer will be here -->
             </p>
-            <button class="taskButton" onclick=solveTask2()>Sprawdź</button>
+            <button class="button" onclick=solveTask2()>Sprawdź</button>
         </div>
 
         <div class="task">
-            <h1>Zadanie 3</h1>
-            <p class="description">
+            <h1 class="header">Zadanie 3</h1>
+            <p class="paragraph paragraph--description">
                 Pobierz liczbę całkowitą z przedziału od 0 do 3, i za pomocą instrukcji
                 warunkowej switch wyświetl komunikat.
             </p>
-            <select id="task3">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+            <select class="select" id="task3">
+                <option class="option option--selected option--disabled" selected disabled>Wybierz liczbę</option>
+                <option class="option" value="0">0</option>
+                <option class="option" value="1">1</option>
+                <option class="option" value="2">2</option>
+                <option class="option" value="3">3</option>
             </select>  
-            <p class="answer" id="task3Answer">
-                <!-- Tu będzie odpowiedź na zadanie 3 -->
+            <p class="paragraph paragraph--answer" id="task3Answer">
+                <!-- Task 3 answer will be here -->
             </p>
-            <button class="taskButton" onclick=solveTask3()>Sprawdź</button>
+            <button class="button" onclick=solveTask3()>Sprawdź</button>
         </div>
 
     </div>
     
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
