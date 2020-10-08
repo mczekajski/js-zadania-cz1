@@ -6,12 +6,7 @@ function solveTask1() {
     }
     num = parseFloat(num);
     if (Number.isInteger(num)) {
-        if (num % 2 == 0) {
-            document.getElementById("task1Answer").innerHTML = `Liczba ${num} jest parzysta.`
-        }
-        else {
-            document.getElementById("task1Answer").innerHTML = `Liczba ${num} jest nieparzysta.`
-        }
+        (num % 2 == 0) ? document.getElementById("task1Answer").innerHTML = `Liczba ${num} jest parzysta.` : document.getElementById("task1Answer").innerHTML = `Liczba ${num} jest nieparzysta.`;
     }
     else {
         document.getElementById("task1Answer").innerHTML = `Liczba ${num} nie jest liczbą całkowitą.`
